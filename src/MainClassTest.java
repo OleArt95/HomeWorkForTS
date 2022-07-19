@@ -4,10 +4,10 @@ import org.junit.Test;
 public class MainClassTest extends MainClass {
 
     @Test
-    public void testGetLocalNumber()
+    public void testGetClassNumber()
     {
-        int expected = 14;
-        int actual = this.getLocalNumber();
-        Assert.assertTrue("Метод getLocalNumber не возвращает число " + expected,actual == expected);
+        int expected = 45;
+        int actual = this.getClassNumber();
+        Assert.assertTrue("метод getClassNumber не возвращает число больше " + expected ,actual >= expected);
     }
 }
